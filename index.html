@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Rocío Hernandez | Developer & Founder of MaaL</title>
+    <meta name="title" content="Rocío Hernandez | Developer & Founder of MaaL">
+    <meta name="description"
+        content="Networking card of Rocío Hernandez, developer and founder of MaaL (Music As A Language). Discover my projects, connect on LinkedIn, and interact with the custom synthesizer built with Web Audio API.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://musicasalanguaje.com/">
+    <meta property="og:title" content="Rocío Hernandez | Developer & Founder of MaaL">
+    <meta property="og:description"
+        content="Networking card of Rocío Hernandez, developer and founder of MaaL (Music As A Language). Discover my projects, connect on LinkedIn, and interact with the custom synthesizer built with Web Audio API.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Rocío Hernandez | Developer & Founder of MaaL">
+    <meta property="twitter:description"
+        content="Networking card of Rocío Hernandez, developer and founder of MaaL (Music As A Language). Discover my projects, connect on LinkedIn, and interact with the custom synthesizer built with Web Audio API.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Dynamic Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Main Card -->
+        <div class="glass-card" id="main-card">
+
+            <!-- Header Section -->
+            <header class="profile-header">
+                <!-- Glowing Initials Badge instead of a standard image logo -->
+                <div class="avatar-glow">
+                    <div class="avatar-inner">
+                        <svg class="avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Circular Soundwave -->
+                            <circle cx="50" cy="50" r="45" class="circle-track" />
+                            <circle cx="50" cy="50" r="45" class="circle-progress" />
+                            <!-- Animated Soundwaves in center -->
+                            <g class="soundwave-lines" transform="translate(30, 38)">
+                                <rect x="0" y="5" width="4" height="14" rx="2" class="bar bar-1" />
+                                <rect x="8" y="0" width="4" height="24" rx="2" class="bar bar-2" />
+                                <rect x="16" y="8" width="4" height="8" rx="2" class="bar bar-3" />
+                                <rect x="24" y="2" width="4" height="20" rx="2" class="bar bar-4" />
+                                <rect x="32" y="6" width="4" height="12" rx="2" class="bar bar-5" />
+                            </g>
+                        </svg>
+                        <span class="avatar-text">RH</span>
+                    </div>
+                </div>
+
+                <h1 class="profile-name">Rocío Hernandez</h1>
+                <p class="profile-title">Developer &amp; Founder of <span class="accent-text">MaaL</span></p>
+
+                <!-- Micro Console Code Bio -->
+                <div class="code-snippet">
+                    <div class="window-buttons">
+                        <span class="win-btn red"></span>
+                        <span class="win-btn yellow"></span>
+                        <span class="win-btn green"></span>
+                    </div>
+                    <code
+                        class="code-text"><span class="keyword">const</span> <span class="variable">maal</span> = {<br>&nbsp;&nbsp;code: <span class="string">'structure'</span>,<br>&nbsp;&nbsp;music: <span class="string">'expression'</span>,<br>&nbsp;&nbsp;syntax: <span class="string">'sound'</span><br>};</code>
+                </div>
+            </header>
+
+            <!-- Links Section -->
+            <section class="links-section">
+                <!-- Featured Link: Web -->
+                <a href="https://musicasalanguaje.com" target="_blank" rel="noopener noreferrer"
+                    class="link-item featured-link" id="link-web">
+                    <div class="link-icon-wrapper">
+                        <!-- Custom Globe/Web SVG Icon -->
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="link-content">
+                        <span class="link-label">musicasalanguaje.com</span>
+                        <span class="link-description">Sitio Web Oficial de MaaL (Music As A Language)</span>
+                    </div>
+                    <div class="badge-pulsing">Principal</div>
+                </a>
+
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/ro-hernandez/" target="_blank" rel="noopener noreferrer"
+                    class="link-item" id="link-linkedin">
+                    <div class="link-icon-wrapper">
+                        <!-- Custom LinkedIn SVG Icon -->
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="link-content">
+                        <span class="link-label">LinkedIn</span>
+                        <span class="link-description">Conectemos profesionalmente</span>
+                    </div>
+                    <div class="arrow-icon">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5"
+                            fill="none">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                <!-- Contact & Copy Email Link -->
+                <div class="link-item actionable-link" id="link-email" role="button" tabindex="0">
+                    <div class="link-icon-wrapper">
+                        <!-- Custom Email SVG Icon -->
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="link-content">
+                        <span class="link-label">Contacto por Email</span>
+                        <span class="link-description" id="email-text">roci42madrid@gmail.com</span>
+                    </div>
+                    <div class="copy-badge" id="copy-badge">
+                        <span>Copiar</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MaaL Interactive Experience (Synthesizer & Wave Visualizer) -->
+            <section class="experience-section">
+                <div class="experience-header">
+                    <div class="experience-indicator">
+                        <span class="pulse-dot"></span>
+                        <span class="indicator-text">MaaL Music As A Language</span>
+                    </div>
+                    <h3 class="experience-title">Toca MaaL porque aprendiendo MaaL aprendes bien</h3>
+                    <p class="experience-desc">Toca los pads para generar acordes sintetizados. El osciloscopio responde
+                        a la frecuencia de tus clics, traduciendo código en sonido.</p>
+                </div>
+
+                <!-- Wave Visualizer Canvas -->
+                <div class="visualizer-container">
+                    <canvas id="synth-visualizer"></canvas>
+                    <div class="visualizer-overlay" id="visualizer-overlay">
+                        <span>Haz clic en un pad para iniciar el audio</span>
+                    </div>
+                </div>
+
+                <!-- Synth Grid (Launchpad style) -->
+                <div class="synth-grid">
+                    <button class="synth-pad pad-1" data-note="C4" aria-label="Nota Do">
+                        <span class="pad-label">DO</span>
+                        <span class="pad-freq">261Hz</span>
+                    </button>
+                    <button class="synth-pad pad-2" data-note="E4" aria-label="Nota Mi">
+                        <span class="pad-label">MI</span>
+                        <span class="pad-freq">329Hz</span>
+                    </button>
+                    <button class="synth-pad pad-3" data-note="G4" aria-label="Nota Sol">
+                        <span class="pad-label">SOL</span>
+                        <span class="pad-freq">392Hz</span>
+                    </button>
+                    <button class="synth-pad pad-4" data-note="B4" aria-label="Nota Si">
+                        <span class="pad-label">SI</span>
+                        <span class="pad-freq">493Hz</span>
+                    </button>
+                    <button class="synth-pad pad-5" data-note="C5" aria-label="Nota Do agudo">
+                        <span class="pad-label">DO+</span>
+                        <span class="pad-freq">523Hz</span>
+                    </button>
+                    <button class="synth-pad pad-6" data-note="E5" aria-label="Nota Mi agudo">
+                        <span class="pad-label">MI+</span>
+                        <span class="pad-freq">659Hz</span>
+                    </button>
+                </div>
+
+                <!-- Controls/Fader panel (Interactive aesthetics) -->
+                <div class="synth-controls">
+                    <div class="control-knob-wrapper">
+                        <label for="knob-tempo" class="knob-label">Rhythm Delay</label>
+                        <input type="range" id="knob-tempo" class="fader" min="0" max="1" step="0.01" value="0.4">
+                    </div>
+                    <div class="control-knob-wrapper">
+                        <label for="knob-reverb" class="knob-label">Release Time</label>
+                        <input type="range" id="knob-reverb" class="fader" min="0.1" max="2" step="0.1" value="0.8">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="profile-footer">
+                <p>© 2026 Rocío Hernandez. Creado con ritmo y código.</p>
+                <div class="footer-tag">
+                    <code>&lt;developer&gt;&amp;&lt;musician&gt;</code>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Toast Notification for Clipboard Copying -->
+    <div class="toast" id="toast">¡Email copiado al portapapeles!</div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
