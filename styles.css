@@ -812,26 +812,54 @@ body {
     }
     
     .glass-card {
-        padding: 2rem 1.25rem;
-        border-radius: 20px;
+        padding: 1.75rem 1.15rem;
+        border-radius: 24px;
+    }
+    
+    /* Scale Down Avatar Badge on mobile for layout balance */
+    .avatar-glow {
+        width: 80px !important;
+        height: 80px !important;
+        margin-bottom: 1rem;
+    }
+    
+    .avatar-text {
+        font-size: 1.85rem !important;
     }
     
     .profile-name {
         font-size: 1.75rem;
+        letter-spacing: -0.3px;
     }
     
     .profile-title {
         font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Prevent Console Bio from expanding or causing overflow */
+    .code-snippet {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 0.75rem !important;
+        line-height: 1.4;
+    }
+    
+    .links-section {
+        gap: 0.9rem;
     }
     
     .link-item {
-        padding: 0.95rem 1rem;
+        padding: 0.9rem 1rem;
+        border-radius: 14px;
     }
     
     .link-icon-wrapper {
         width: 38px;
         height: 38px;
         margin-right: 0.85rem;
+        border-radius: 10px;
     }
     
     .svg-icon {
@@ -844,7 +872,7 @@ body {
     }
     
     .link-description {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
     }
     
     .badge-pulsing {
@@ -852,21 +880,83 @@ body {
         padding: 0.15rem 0.4rem;
     }
     
+    .experience-section {
+        padding-top: 1.5rem;
+    }
+    
+    .experience-title {
+        font-size: 1.15rem;
+    }
+    
+    .experience-desc {
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+    
+    /* Optimize Visualizer Canvas height on mobile */
+    .visualizer-container {
+        height: 75px !important;
+        margin-bottom: 1rem;
+    }
+    
     .synth-grid {
         gap: 6px;
     }
     
     .synth-pad {
-        padding: 0.8rem 0.3rem;
+        padding: 0.8rem 0.25rem;
+        border-radius: 10px;
     }
     
     .pad-label {
         font-size: 1rem;
     }
     
+    .pad-freq {
+        font-size: 0.6rem;
+    }
+    
     .synth-controls {
         flex-direction: column;
         gap: 12px;
         padding: 0.85rem 1rem;
+        border-radius: 12px;
+    }
+}
+
+/* Specific optimizations for extra small mobile displays */
+@media (max-width: 360px) {
+    .glass-card {
+        padding: 1.5rem 0.85rem;
+    }
+    
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .avatar-glow {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    .avatar-text {
+        font-size: 1.6rem !important;
+    }
+    
+    .code-snippet {
+        font-size: 0.7rem !important;
+        padding: 0.6rem 0.85rem !important;
+    }
+    
+    .synth-pad {
+        padding: 0.65rem 0.2rem !important;
+    }
+    
+    .pad-label {
+        font-size: 0.9rem !important;
+    }
+    
+    .pad-freq {
+        font-size: 0.55rem !important;
     }
 }
