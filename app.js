@@ -1,5 +1,5 @@
 /**
- * Rocío Hernandez - Networking Card (MaaL)
+ * Rocío Hernández - Networking Card (MaaL)
  * Client-side script: Canvas background, Web Audio API synth, and visual interactions.
  */
 
